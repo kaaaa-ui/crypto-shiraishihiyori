@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白石ひよりの CRYPTO NEWS - LINE登録特典</title>
+<meta name="description" content="LINE登録で仮想通貨スタートパック4冊を無料プレゼント。月5万円ルート・エアドロリスト・税金シート・情報収集ツール30選。">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+  :root {
+    --navy: #1a2744;
+    --navy-dark: #0f1a2e;
+    --sky: #87CEEB;
+    --sky-light: #b8e4f7;
+    --gold: #C9A84C;
+    --gold-light: #e8d9a0;
+    --white: #FFFFFF;
+    --gray: #f5f7fa;
+    --text: #2d3748;
+    --text-light: #718096;
+    --red: #e53e3e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Noto Sans JP', sans-serif; color: var(--text); line-height: 1.8; background: var(--white); }
+
+  /* ===== HERO ===== */
+  .hero {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center;
+    position: relative; overflow: hidden;
+    background: var(--navy-dark);
+  }
+
+  .hero-image {
+    width: 100%;
+    display: block;
+    animation: fadeInUp 0.6s ease;
+  }
+
+  .hero-bottom {
+    width: 100%;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    padding: 32px 24px 48px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+
+  .hero-sub {
+    color: var(--sky-light); font-size: 16px; font-weight: 500;
+    margin-bottom: 24px; max-width: 500px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+  }
+
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, #06C755 0%, #05a648 100%);
+    color: var(--white); font-size: 18px; font-weight: 700;
+    padding: 16px 40px; border-radius: 50px;
+    text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeInUp 0.6s ease 0.3s both;
+  }
+  .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(6,199,85,0.3); }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* ===== SECTION ===== */
+  section { padding: 80px 24px; }
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .section-label {
+    display: inline-block; background: var(--navy); color: var(--sky);
+    font-size: 12px; font-weight: 700; padding: 4px 14px;
+    border-radius: 20px; letter-spacing: 1px; margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(24px, 4vw, 36px); font-weight: 900;
+    color: var(--navy); margin-bottom: 16px; line-height: 1.3;
+  }
+  .section-title span { color: var(--sky); }
+
+  .section-desc { color: var(--text-light); font-size: 15px; margin-bottom: 40px; max-width: 600px; }
+
+  /* ===== BOOK CARDS ===== */
+  .books-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px; }
+
+  .book-card {
+    border: 1px solid #e2e8f0; border-radius: 16px;
+    overflow: hidden; transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--white);
+  }
+  .book-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+
+  .book-card-cover {
+    width: 100%; aspect-ratio: 3/4; object-fit: cover;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .book-card-header {
+    padding: 24px 24px 16px;
+    position: relative;
+  }
+
+  .book-vol {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 10px; border-radius: 12px; margin-bottom: 10px;
+  }
+  .book-vol.v1 { background: #dbeafe; color: #1e40af; }
+  .book-vol.v2 { background: #fef3c7; color: #92400e; }
+  .book-vol.v3 { background: #fee2e2; color: #991b1b; }
+  .book-vol.v4 { background: #d1fae5; color: #065f46; }
+
+  .book-card h3 {
+    font-size: 20px; font-weight: 900; color: var(--navy);
+    margin-bottom: 8px; line-height: 1.3;
+  }
+
+  .book-card p { font-size: 14px; color: var(--text-light); }
+
+  .book-card-body {
+    padding: 0 24px 24px;
+  }
+
+  .book-features {
+    list-style: none; padding: 0;
+  }
+  .book-features li {
+    padding: 6px 0; padding-left: 24px; position: relative;
+    font-size: 13px; color: var(--text);
+  }
+  .book-features li::before {
+    content: '✓'; position: absolute; left: 0;
+    color: var(--sky); font-weight: 700;
+  }
+
+  .book-delivery {
+    margin-top: 12px; font-size: 12px;
+    color: var(--text-light); background: var(--gray);
+    padding: 8px 12px; border-radius: 8px;
+  }
+
+  /* ===== PERSONA ===== */
+  .persona-section { background: var(--gray); }
+
+  .persona-card {
+    background: var(--white); border-radius: 16px;
+    padding: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    display: flex; gap: 30px; align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .persona-avatar {
+    width: 120px; height: 120px; border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid var(--sky);
+  }
+
+  .persona-info { flex: 1; min-width: 250px; }
+  .persona-info h3 { font-size: 22px; font-weight: 900; color: var(--navy); margin-bottom: 4px; }
+  .persona-info .tagline { font-size: 14px; color: var(--sky); font-weight: 500; margin-bottom: 12px; }
+  .persona-info p { font-size: 14px; color: var(--text-light); }
+
+  /* ===== CTA SECTION ===== */
+  .cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    text-align: center; color: var(--white);
+  }
+
+  .cta-section .section-title { color: var(--white); }
+  .cta-section .section-title span { color: var(--sky); }
+  .cta-section .section-desc { color: rgba(255,255,255,0.7); }
+
+  .cta-benefits {
+    list-style: none; padding: 0; max-width: 400px; margin: 0 auto 30px;
+    text-align: left;
+  }
+  .cta-benefits li {
+    padding: 8px 0; font-size: 15px; color: rgba(255,255,255,0.9);
+  }
+  .cta-benefits li::before { content: '🎁 '; }
+
+  .cta-books-img {
+    width: 100%; max-width: 600px;
+    border-radius: 12px; margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, #06C755 0%, #05a648 100%);
+    color: var(--white); font-size: 20px; font-weight: 700;
+    padding: 18px 48px; border-radius: 50px;
+    text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(6,199,85,0.3); }
+
+  .cta-sub { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.5); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 30px 24px; text-align: center;
+    font-size: 12px; color: var(--text-light);
+    border-top: 1px solid #e2e8f0;
+  }
+
+  /* ===== NFA ===== */
+  .nfa {
+    max-width: 600px; margin: 30px auto 0;
+    font-size: 11px; color: rgba(255,255,255,0.3);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    section { padding: 48px 16px; }
+    .books-grid { grid-template-columns: 1fr; }
+    .book-card-cover { aspect-ratio: 4/3; }
+    .persona-card { flex-direction: column; text-align: center; padding: 24px; }
+    .hero-bottom { padding: 24px 16px 36px; }
+    .hero-sub { font-size: 14px; }
+    .hero-cta { font-size: 16px; padding: 14px 32px; }
+    .cta-btn { font-size: 17px; padding: 16px 36px; }
+    .cta-books-img { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="hero-hiyori.png" alt="白石ひより LINE登録で4冊無料プレゼント" class="hero-image">
+  <div class="hero-bottom">
+    <p class="hero-sub">月5万円の作り方、エアドロ攻略、税金対策、プロの情報源。<br>LINE登録だけで全部届きます。</p>
+    <a href="#cta" class="hero-cta">LINEで無料で受け取る</a>
+  </div>
+</div>
+
+<!-- BOOKS -->
+<section>
+  <div class="container">
+    <span class="section-label">CONTENTS</span>
+    <h2 class="section-title">届く特典は<span>この4冊</span></h2>
+    <p class="section-desc">初心者から中級者まで、仮想通貨で稼ぐために必要な情報を全部まとめました。</p>
+
+    <div class="books-grid">
+
+      <div class="book-card">
+        <img src="vol1.png" alt="Vol.1 月5万円を仮想通貨で作る5つのルート" class="book-card-cover">
+        <div class="book-card-header">
+          <span class="book-vol v1">Vol.1</span>
+          <h3>月5万円を仮想通貨で作る<br>5つのルート</h3>
+          <p>ステーキング・エアドロ・レンディング・ポイ活・アフィリエイト。具体的な収益期待値と始め方を完全解説。</p>
+        </div>
+        <div class="book-card-body">
+          <ul class="book-features">
+            <li>5ルートの比較表+おすすめ組み合わせ</li>
+            <li>各ルートの始め方ステップ</li>
+            <li>初心者向けの具体的な収益シミュレーション</li>
+          </ul>
+          <div class="book-delivery">登録直後にお届け</div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="vol2.png" alt="Vol.2 2026年エアドロ厳選リスト" class="book-card-cover">
+        <div class="book-card-header">
+          <span class="book-vol v2">Vol.2</span>
+          <h3>2026年エアドロ<br>厳選リスト＋参加手順</h3>
+          <p>見ながらやるだけ。注目プロジェクト10選の参加方法を手順つきで完全ガイド。</p>
+        </div>
+        <div class="book-card-body">
+          <ul class="book-features">
+            <li>Berachain / Monad / Scroll 等の期待値大プロジェクト</li>
+            <li>各プロジェクトの具体的参加手順</li>
+            <li>エアドロ効率化5つの鉄則</li>
+          </ul>
+          <div class="book-delivery">Day 5 にお届け</div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="vol3.png" alt="Vol.3 税金で50万円損しないシート" class="book-card-cover">
+        <div class="book-card-header">
+          <span class="book-vol v3">Vol.3</span>
+          <h3>税金で50万円<br>損しないシート</h3>
+          <p>利確・確定申告・節税のすべて。知らないだけで数十万円の差がつく税金の基本を完全網羅。</p>
+        </div>
+        <div class="book-card-body">
+          <ul class="book-features">
+            <li>利益別の税金シミュレーション表</li>
+            <li>合法的な節税テクニック7選</li>
+            <li>確定申告チェックリスト</li>
+          </ul>
+          <div class="book-delivery">Day 10 にお届け</div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="vol4.png" alt="Vol.4 プロの情報収集ツール30選" class="book-card-cover">
+        <div class="book-card-header">
+          <span class="book-vol v4">Vol.4</span>
+          <h3>プロの<br>情報収集ツール30選</h3>
+          <p>全部無料 or 無料プランあり。価格・チャート・ニュース・エアドロ情報の最強ツールリスト。</p>
+        </div>
+        <div class="book-card-body">
+          <ul class="book-features">
+            <li>価格チャート・オンチェーンデータツール10選</li>
+            <li>ニュースサイト+フォロー必須X垢12選</li>
+            <li>エアドロ・DeFi・アラートツール8選</li>
+          </ul>
+          <div class="book-delivery">Day 14 にお届け</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PERSONA -->
+<section class="persona-section">
+  <div class="container">
+    <span class="section-label">WHO IS HIYORI?</span>
+    <h2 class="section-title">作者: <span>白石ひより</span></h2>
+
+    <div class="persona-card">
+      <img src="hiyori-avatar.png" alt="白石ひより" class="persona-avatar">
+      <div class="persona-info">
+        <h3>白石ひより</h3>
+        <div class="tagline">CRYPTO NEWS キャスター</div>
+        <p>元テレビ局AD。仮想通貨に出会い独立。「難しいことをわかりやすく」をモットーに、毎日のクリプトニュースをYouTubeで解説中。朝のお天気お姉さんのように、信頼できる情報を温かくお届けします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <span class="section-label" style="background:var(--gold);color:var(--navy);">無料プレゼント</span>
+    <h2 class="section-title">LINE登録で<br><span>4冊まるごと無料</span></h2>
+    <p class="section-desc" style="margin-left:auto;margin-right:auto;">登録後すぐにVol.1が届きます。その後、Day 5・10・14で残りの3冊を順次お届け。</p>
+
+    <img src="hero-books.png" alt="4冊セット" class="cta-books-img">
+
+    <ul class="cta-benefits">
+      <li>Vol.1: 月5万円を作る5つのルート</li>
+      <li>Vol.2: 2026年エアドロ厳選リスト</li>
+      <li>Vol.3: 税金で50万円損しないシート</li>
+      <li>Vol.4: プロの情報収集ツール30選</li>
+    </ul>
+
+    <a href="#" class="cta-btn">LINEで無料で受け取る</a>
+    <p class="cta-sub">10秒で登録完了。いつでもブロックOK。</p>
+
+    <div class="nfa">
+      ⚠️ この特典は情報提供を目的としており、特定の投資行動を推奨するものではありません（NFA）。投資判断はご自身の責任でお願いいたします。税務に関する正確な判断は税理士にご相談ください。
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 白石ひよりの CRYPTO NEWS. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
