@@ -225,16 +225,41 @@
     line-height: 1.6;
   }
 
+  /* ===== TABLET ===== */
+  @media (max-width: 768px) {
+    .books-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+    .section-title { font-size: clamp(22px, 5vw, 32px); }
+  }
+
+  /* ===== MOBILE ===== */
   @media (max-width: 640px) {
     section { padding: 48px 16px; }
-    .books-grid { grid-template-columns: 1fr; }
-    .book-card-cover { aspect-ratio: 4/3; }
+    .books-grid { grid-template-columns: 1fr; max-width: 100%; }
+    .book-card-cover { aspect-ratio: 3/4; object-fit: contain; background: var(--gray); }
+    .book-card-header { padding: 20px 20px 12px; }
+    .book-card h3 { font-size: 18px; }
+    .book-card p { font-size: 13px; }
+    .book-card-body { padding: 0 20px 20px; }
+    .book-features li { font-size: 12px; }
+    .book-download { font-size: 14px; padding: 12px 20px; }
     .persona-card { flex-direction: column; text-align: center; padding: 24px; }
+    .persona-avatar { width: 100px; height: 100px; }
+    .persona-info h3 { font-size: 20px; }
     .hero-bottom { padding: 24px 16px 36px; }
     .hero-sub { font-size: 14px; }
     .hero-cta { font-size: 16px; padding: 14px 32px; }
     .cta-btn { font-size: 17px; padding: 16px 36px; }
     .cta-books-img { max-width: 100%; }
+    .cta-benefits li { font-size: 13px; }
+    .section-title { font-size: clamp(20px, 5vw, 28px); }
+    .section-desc { font-size: 14px; }
+  }
+
+  /* ===== SMALL MOBILE ===== */
+  @media (max-width: 380px) {
+    .hero-cta { font-size: 15px; padding: 12px 24px; }
+    .cta-btn { font-size: 15px; padding: 14px 28px; }
+    .book-card h3 { font-size: 16px; }
   }
 </style>
 </head>
